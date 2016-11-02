@@ -1,0 +1,59 @@
+.logoHeader {
+  background-color: #0c4d78;
+  width: 100vw;
+  height: 400px;
+  .logoBox {
+    width: 75vw;
+    display: block;
+    margin: 15px auto;
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    img {
+      display: block;
+      margin: 0 auto;
+      background-color: #0c679b;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+.showMenuContainer {
+  width: 100vw;
+  #showMenu {
+    background-color: #347853;
+    width: 300px;
+    height: 300px;
+    display: block;
+    border-radius: 100;
+  }
+}
+
+.image-right {
+  float:right;
+  display:block;
+  max-width:450px;
+  margin-left:35px;
+}
+
+.image-left {
+  float:left;
+  display:block;
+  max-width:450px;
+  margin-right:35px;
+}
+
+.spacer {
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+.section {
+  display: block;
+  width: 100%;
+  clear: both;
+  min-height: 310px;
+  margin-bottom: 35px;
+}
+
