@@ -10,10 +10,14 @@
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
   </head>
   <body>
-
+  <div class="leather_borders">
+    <div class="left"></div>
+    <div class="right"></div>
+  </div>
+  {{>logoArea}}
+  {{>sideNav}}
   {{>mainNav}}
   {{>topNav}}
-  {{>sideNav}}
 
     {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
     {{> body}}
