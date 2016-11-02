@@ -1,34 +1,11 @@
-.logoHeader {
-  background-color: #0c4d78;
-  width: 100vw;
-  height: 400px;
-  .logoBox {
-    width: 75vw;
-    display: block;
-    margin: 15px auto;
-    background-color: transparent;
-    height: 100%;
-    width: 100%;
-    img {
-      display: block;
-      margin: 0 auto;
-      background-color: #0c679b;
-      height: 100%;
-      width: 100%;
-    }
+.homepage {
+  h1 {
+    text-align: center;
+  }
+  @include breakpoint(large) {
+    text-align: left;
   }
 }
-.showMenuContainer {
-  width: 100vw;
-  #showMenu {
-    background-color: #347853;
-    width: 300px;
-    height: 300px;
-    display: block;
-    border-radius: 100;
-  }
-}
-
 .image-right {
   float:right;
   display:block;

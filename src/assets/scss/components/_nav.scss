@@ -1,3 +1,29 @@
+.logoHeader {
+  background-color: #0c4d78;
+  width: 100vw;
+  padding: 15px;
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 300px;
+  }
+}
+.showMenuContainer {
+  width: 100vw;
+  #showMenu {
+    background-color: #347853;
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+    .startButton {
+      display: block;
+      margin: 15px auto;
+      border-radius: 100%;
+    }
+  }
+}
+
 #mainNav {
   .navContainer {
     visibility: hidden;
