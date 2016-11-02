@@ -37,7 +37,7 @@
   }
 }
 
-@include breakpoint(large) {
+@include breakpoint(large x-large) {
   #topNav {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#81f1ff+0,81f1ff+28,81f1ff+52,81f1ff+100&0.03+0,0.07+28,0.15+52,0.02+100 */
     background: -moz-linear-gradient(top, rgba(129, 241, 255, 0.03) 0%, rgba(129, 241, 255, 0.07) 28%, rgba(129, 241, 255, 0.15) 52%, rgba(129, 241, 255, 0.02) 100%); /* FF3.6-15 */
