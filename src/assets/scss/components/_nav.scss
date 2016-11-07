@@ -8,6 +8,20 @@
     width: 100%;
     max-width: 300px;
   }
+  @include breakpoint(large) {
+    background: url(http://carfling.com/assets/images/dash_carbon.png);
+    background-color: transparent;
+    height:131px;
+    display: block;
+    .social {
+      position: absolute;
+      left: 0;
+      top: 0;
+      ul {
+        list-style: none;
+      }
+    }
+  }
 }
 .showMenuContainer {
   width: 100vw;
@@ -37,39 +51,50 @@
   }
 }
 
-@include breakpoint(large x-large) {
-  #topNav {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#81f1ff+0,81f1ff+28,81f1ff+52,81f1ff+100&0.03+0,0.07+28,0.15+52,0.02+100 */
-    background: -moz-linear-gradient(top, rgba(129, 241, 255, 0.03) 0%, rgba(129, 241, 255, 0.07) 28%, rgba(129, 241, 255, 0.15) 52%, rgba(129, 241, 255, 0.02) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(129, 241, 255, 0.03) 0%, rgba(129, 241, 255, 0.07) 28%, rgba(129, 241, 255, 0.15) 52%, rgba(129, 241, 255, 0.02) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(129, 241, 255, 0.03) 0%, rgba(129, 241, 255, 0.07) 28%, rgba(129, 241, 255, 0.15) 52%, rgba(129, 241, 255, 0.02) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0881f1ff', endColorstr='#0581f1ff', GradientType=0); /* IE6-9 */
-    ul {
-      display: block;
-      margin: 0 auto;
-    }
-    li {
-      list-style: none;
-      display: inline-block;
-      margin: 0 1rem;
-      a {
-        font-family: $topNav-font;
-        color: $digital;
-        font-size: 1.5rem;
-        text-transform: uppercase;
-        text-shadow: -1px -1px 1px $digital;
-        opacity: .5;
-        -webkit-transition: .35s ease-in-out;
-        -moz-transition: .35s ease-in-out;
-        -o-transition: .35s ease-in-out;
-        transition: .35s ease-in-out;
-        &:hover {
-          opacity: 1;
-          text-shadow: -1px -2px 2px $digital;
-        }
-        @include breakpoint(large) {
-        }
+#topNav {
+  height: 69px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#81f1ff+0,81f1ff+28,81f1ff+52,81f1ff+100&0.03+0,0.07+28,0.15+52,0.02+100 */
+  background: -moz-linear-gradient(top, rgba(129, 241, 255, 0.03) 0%, rgba(129, 241, 255, 0.07) 28%, rgba(129, 241, 255, 0.15) 52%, rgba(129, 241, 255, 0.02) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(129, 241, 255, 0.03) 0%, rgba(129, 241, 255, 0.07) 28%, rgba(129, 241, 255, 0.15) 52%, rgba(129, 241, 255, 0.02) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(129, 241, 255, 0.03) 0%, rgba(129, 241, 255, 0.07) 28%, rgba(129, 241, 255, 0.15) 52%, rgba(129, 241, 255, 0.02) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0881f1ff', endColorstr='#0581f1ff', GradientType=0); /* IE6-9 */
+  .background {
+    background-image: none;
+    background-color: #3c3c3c;
+  }
+  ul {
+    display: block;
+    margin: 0 auto;
+  }
+  li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 1rem;
+    a {
+      font-family: $topNav-font;
+      color: $digital;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      text-shadow: -1px -1px 1px $digital;
+      opacity: .5;
+      -webkit-transition: .35s ease-in-out;
+      -moz-transition: .35s ease-in-out;
+      -o-transition: .35s ease-in-out;
+      transition: .35s ease-in-out;
+      &:hover {
+        opacity: 1;
+        text-shadow: -1px -2px 2px $digital;
       }
     }
+  }
+}
+
+.sideNav {
+  @include breakpoint(large) {
+    background-color: #3c3c3c;
+    display: block;
+    width: 400px;
+    float: left;
+    position: absolute;
   }
 }

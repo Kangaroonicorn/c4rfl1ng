@@ -7,29 +7,37 @@
   }
 }
 
-.leather_borders {
-  height: 100vh;
-  width: 100vw;
-  z-index: -1000;
-  display: block;
-  position: fixed;
-  .left {
-    background: url(../img/leather_border_left.jpg);
-    background-repeat: no-repeat;
-    display: block;
-    position: fixed;
-    width: 216px;
-    height: 100%;
-    left: 0;
+.container {
+  @include breakpoint(large) {
+    margin-left: 400px;
   }
-  .right {
-    background: url(../img/leather_border_right.jpg);
-    background-repeat: no-repeat;
+}
+
+.leather_borders {
+  @include breakpoint(medium) {
+    height: 100vh;
+    width: 100vw;
+    z-index: -1000;
     display: block;
     position: fixed;
-    width: 216px;
-    height: 100%;
-    right: 0;
+    .left {
+      background: url(../img/leather_border_left.jpg);
+      background-repeat: no-repeat;
+      display: block;
+      position: fixed;
+      width: 216px;
+      height: 100%;
+      left: 0;
+    }
+    .right {
+      background: url(../img/leather_border_right.jpg);
+      background-repeat: no-repeat;
+      display: block;
+      position: fixed;
+      width: 216px;
+      height: 100%;
+      right: 0;
+    }
   }
 }
 
