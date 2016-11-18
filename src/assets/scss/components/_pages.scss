@@ -22,7 +22,7 @@
     position: fixed;
     .left {
       background: url(../img/leather_border_left.jpg);
-      background-repeat: no-repeat;
+      background-repeat: repeat-y;
       display: block;
       position: fixed;
       width: 216px;
@@ -31,7 +31,7 @@
     }
     .right {
       background: url(../img/leather_border_right.jpg);
-      background-repeat: no-repeat;
+      background-repeat: repeat-y;
       display: block;
       position: fixed;
       width: 216px;

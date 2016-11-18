@@ -50,21 +50,26 @@
     margin: 0 auto;
   }
 }
-
-#topNav {
-  height: 69px;
+.background-gradient {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#81f1ff+0,81f1ff+28,81f1ff+52,81f1ff+100&0.03+0,0.07+28,0.15+52,0.02+100 */
   background: -moz-linear-gradient(top, rgba(129, 241, 255, 0.03) 0%, rgba(129, 241, 255, 0.07) 28%, rgba(129, 241, 255, 0.15) 52%, rgba(129, 241, 255, 0.02) 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top, rgba(129, 241, 255, 0.03) 0%, rgba(129, 241, 255, 0.07) 28%, rgba(129, 241, 255, 0.15) 52%, rgba(129, 241, 255, 0.02) 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, rgba(129, 241, 255, 0.03) 0%, rgba(129, 241, 255, 0.07) 28%, rgba(129, 241, 255, 0.15) 52%, rgba(129, 241, 255, 0.02) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0881f1ff', endColorstr='#0581f1ff', GradientType=0); /* IE6-9 */
-  .background {
-    background-image: none;
-    background-color: #3c3c3c;
-  }
+}
+
+#topNav {
+  height: 117px;
+  background-image: url(../img/top-menu-digital.png);
+  background-repeat: repeat-x;
   ul {
     display: block;
-    margin: 0 auto;
+    margin: 0;
+    padding-top: 109px;
+    position: relative;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    width: 688px;
   }
   li {
     list-style: none;
@@ -75,7 +80,7 @@
       color: $digital;
       font-size: 1.5rem;
       text-transform: uppercase;
-      text-shadow: -1px -1px 1px $digital;
+      text-shadow: $digital 0px 0px 14px;
       opacity: .5;
       -webkit-transition: .35s ease-in-out;
       -moz-transition: .35s ease-in-out;
@@ -83,18 +88,129 @@
       transition: .35s ease-in-out;
       &:hover {
         opacity: 1;
-        text-shadow: -1px -2px 2px $digital;
+        text-shadow: $white 0px 0px 14px;
       }
+    }
+  }
+}
+
+.startButton {
+  background-image: url(../img/start-button-up.png);
+  display: block;
+  height: 136px;
+  width: 136px;
+  background-repeat: no-repeat;
+  -webkit-transition: .1s ease-in-out;
+  -moz-transition: .1s ease-in-out;
+  -o-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+  margin: 0 auto 0 65px;
+  font-family: "Michroma", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $white;
+  text-shadow: $digital-green 0px 0px 14px;
+  &:before {
+    content: 'START';
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    color: $white;
+  }
+  &:after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 3px;
+    background-color: $digital-green;
+    margin: 8px auto;
+    box-shadow: $digital-green 0px 0px 14px;
+  }
+  &:hover {
+    background-image: url(../img/start-button-dn.png);
+    &:before {
+      padding-top: 48px;
+    }
+    &:after {
+      background-color: $digital-orange;
+      box-shadow: $white 0px 0px 14px;
     }
   }
 }
 
 .sideNav {
   @include breakpoint(large) {
-    background-color: #3c3c3c;
+    background-image: url(../img/side-menu.png);
+    background-repeat: no-repeat;
     display: block;
-    width: 400px;
+    width: 350px;
+    height: 730px;
     float: left;
-    position: absolute;
+    ul {
+      list-style: none;
+      margin: 20px 12px;
+    }
+    li {
+      background-image: url(../img/button-up.png);
+      display: block;
+      width: 231px;
+      height: 87px;
+      -webkit-transition: .1s ease-in-out;
+      -moz-transition: .1s ease-in-out;
+      -o-transition: .1s ease-in-out;
+      transition: .1s ease-in-out;
+      font-family: "Michroma", Helvetica, Roboto, Arial, sans-serif;
+      font-weight: bold;
+      text-transform: uppercase;
+
+      a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 28px 0 0 8px;
+        font-size: 14px;
+        color: $white;
+        text-shadow: $digital-green 0px 0px 14px;
+        &:after {
+          content: '';
+          display: block;
+          width: 50px;
+          height: 3px;
+          background-color: $digital-green-off;
+          margin: 4px auto;
+        }
+      }
+      &:hover {
+        background-image: url(../img/button-dn.png);
+        a {
+          padding: 27px 0 0 8px;
+          &:after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background-color: $digital-green;
+            margin: 3px auto;
+            box-shadow: $digital-green 0px 0px 3px;
+          }
+        }
+      }
+      &:active {
+        background-image: url(../img/button-dn.png);
+        a {
+          padding: 27px 0 0 8px;
+          &:after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background-color: $digital-green;
+            margin: 3px auto;
+            box-shadow: $digital-green 0px 0px 14px;
+          }
+        }
+      }
+    }
   }
 }
