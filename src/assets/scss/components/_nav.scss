@@ -1,27 +1,55 @@
-.logoHeader {
-  background-color: #0c4d78;
+.desktopHeader {
+  background: url(../img/logo-bar-carbon.png);
+  background-repeat: repeat-x;
   width: 100vw;
-  padding: 15px;
-  img {
+  height: 168px;
+  display: block;
+  .cluster {
+    width: 1500px;
+    height: 168px;
     display: block;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 300px;
-  }
-  @include breakpoint(large) {
-    background: url(http://carfling.com/assets/images/dash_carbon.png);
-    background-color: transparent;
-    height:131px;
-    display: block;
-    .social {
-      position: absolute;
-      left: 0;
-      top: 0;
+    margin: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    top:0;
+    .speedo-left {
+      background-image: url(../img/speedometer.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      display: inline-block;
+      width: 560px;
+      height: 200px;
+      float: left;
       ul {
         list-style: none;
+        width: 200px;
+        margin: 0 auto;
+        display: block;
       }
     }
+    .logo {
+      display: inline-block;
+      width: 380px;
+      height: 168px;
+    }
+    .speedo-right {
+      background-image: url(../img/speedo-right.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      display: inline-block;
+      width: 560px;
+      height: 200px;
+      float: right;
+    }
   }
+}
+
+.mobileHeader {
+  background: url(../img/logo-bar-carbon.png);
+  background-repeat: repeat-x;
+  width: 100vw;
+  height: 168px;
 }
 .showMenuContainer {
   width: 100vw;
