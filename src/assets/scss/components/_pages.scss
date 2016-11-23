@@ -7,10 +7,17 @@
   }
 }
 
-.container {
+.content {
+  h1 {
+    margin-bottom: 50px;
+  }
+  margin: 15px 15px 75px 15px;
+  max-width: 100vw;
+  display: block;
   @include breakpoint(large) {
-    margin-left: 300px;
+    margin-left: 400px;
     margin-top: 50px;
+    max-width: 800px;
   }
 }
 
@@ -45,14 +52,16 @@
 .image-right {
   float:right;
   display:block;
-  max-width:450px;
+  width:450px;
+  max-width: 100%;
   margin-left:35px;
 }
 
 .image-left {
   float:left;
   display:block;
-  max-width:450px;
+  width:450px;
+  max-width: 100%;
   margin-right:35px;
 }
 
