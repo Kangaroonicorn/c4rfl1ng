@@ -3,29 +3,12 @@
  */
 
 $(document).ready(function() {
-    $('#showNav').click(function() {
-        $('#mainNav').slideToggle("medium");
+
+    $('#showMenu').click(function() {
+        $('#mobileNav').slideToggle("medium");
     });
-    $('#hideNav').click(function() {
-        $('#mainNav').slideToggle("medium");
+    $('#closeMainMenu').click(function() {
+        $('#mobileNav').slideToggle("medium");
     });
 });
 
-
-
-var mywindow = $(window);
-var mypos = mywindow.scrollTop();
-var up = false;
-var newscroll;
-mywindow.scroll(function () {
-    newscroll = mywindow.scrollTop();
-    if (newscroll > mypos && !up) {
-        $('.hamtext').stop().fadeOut();
-        up = !up;
-        console.log(up);
-    } else if(newscroll < mypos && up) {
-        $('.hamtext').stop().fadeIn();
-        up = !up;
-    }
-    mypos = newscroll;
-});

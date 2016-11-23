@@ -1,14 +1,11 @@
 <div class="hide-for-large">
+    {{>mobileNav}}
     <div class="mobileHeader">
-        <div class="logoBox">
-            <img class="logo" src="https://placekitten.com/310/100">
+        <div class="logo">
+            <a href="/"><img src="{{root}}/assets/img/logo.png"></a>
         </div>
-    </div>
-    <div class="showMenuContainer">
-        <div id="showMenu" class="showMenu">
-            <a href="">
-                <img class="startButton" src="../assets/img/start_red.png">
-            </a>
+        <div class="showMenuContainer">
+            <div id="showMenu" class="menuButton"></div>
         </div>
     </div>
 </div>
@@ -18,8 +15,7 @@
         <div class="cluster">
             <div class="speedo-left">
                 <ul>
-                    <li><a href="https://www.facebook.com/CarFlingCarClub/"><img onmouseout="this.src='../assets/img/facebook.png'" onmouseover="this.src='../assets/img/facebook_dn.png'" src="../assets/img/facebook.png"></a></li>
-                    <li><a href="http://twitter.com/CarFling"><img onmouseout="this.src='../assets/img/twitter.png'" onmouseover="this.src='../assets/img/twitter_dn.png'" src="../assets/img/twitter.png"></a></li>
+                    {{>socialNav}}
                 </ul>
             </div>
             <div class="logo">

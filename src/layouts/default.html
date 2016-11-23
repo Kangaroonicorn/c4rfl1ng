@@ -15,12 +15,18 @@
     <div class="right"></div>
   </div>
   {{>logoArea}}
-  {{>mainNav}}
-  {{>topNav}}
-  {{>sideNav}}
+  <div id="topNav" class="show-for-large">
+    <div class="background">
+      {{>digitalNav}}
+    </div>
+  </div>
+  <div class="show-for-large">
+    <div class="sideNav">
+      {{>buttonNav}}
+    </div>
+  </div>
 
 
-  {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
     {{> body}}
 
     <script src="{{root}}assets/js/app.js"></script>
